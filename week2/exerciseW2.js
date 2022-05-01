@@ -4,11 +4,11 @@ function fOne() {
     
     const outputElement = document.getElementById('f1Output');
 
-    outputElement.innerHTML = 'You entered: ' + reverse_a_number(input);
+    outputElement.innerHTML = 'Reverse Number' + reverse_a_number(input);
   }
 
 
-
+//this function changes the order of the numbers
 function reverse_a_number(n)
 {
     
