@@ -3,6 +3,7 @@
     }
     addEventListener('click', doSomething);
 
+    //The Event Target
 function doSomething(event){
     console.log(event.type);
     }    
@@ -10,12 +11,14 @@ function doSomething(event){
 function doSomething(event){
 console.log(event.target);
 } 
-
+    //Coordinates of an Event
 function doSomething(event){
     console.log(`screen: (${event.screenX},${event.screenY}),
     page: (${event.pageX},${event.pageY}), client:
     (${event.screenX},${event.screenY})`)
 }*/
+
+    //Mouse Events
 const clickParagraph = document.getElementById('click');
 clickParagraph.addEventListener('click',() =>
 console.log('click') );
@@ -33,7 +36,9 @@ event.target.classList.toggle('highlight');
 const mouseParagraph = document.getElementById('mouse');
 mouseParagraph.addEventListener('mouseover', highlight);
 mouseParagraph.addEventListener('mouseout', highlight);
+    
 
+    //Keyboard Events
 addEventListener('keydown',highlight);
 
 addEventListener('keyup', (event) => console.log(`You
