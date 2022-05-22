@@ -35,3 +35,11 @@ input.addEventListener('blur', function(){
     if(input.value === '') {
     input.value = 'Search Here';
     } }, false);
+
+function squareRoot(number) {
+    'use strict';
+    if (number < 0) {
+    throw new RangeError('You cannot find the square root of negative numbers')
+    }
+    return Math.sqrt(number);
+    };
