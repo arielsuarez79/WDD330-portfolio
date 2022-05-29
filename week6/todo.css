@@ -103,6 +103,7 @@ button{
 }
 .remove{
     height: 25px;
-    border: 0.2px solid #24A19C;
     
+    background: red;
+    color: white;
 }
