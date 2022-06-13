@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="exercise.css">
+    
+</head>
+<body>
+    <h1>Put your <span>dukes</span> up, sire</h1>
+    <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+    </canvas>
+    <h2>Demo 5: Saving canvas drawings</h2>
+    <canvas width="200" height="200" id="demo5" class="myCanvas">
+    Sorry! Your browser doesn't support Canvas.
+    </canvas>
+    <h2>Demo 6: Drawing an image to the canvas</h2>
+    <canvas width="400" height="400" id="demo6" class="myCanvas">
+     Sorry! Your browser doesn't support Canvas.
+
+    </canvas>
+    
+    <img src="images/bike.jpg" id="myImageElem">
+    <button name="saveButton" id="saveButton">Save Drawing</button>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <circle cx="50" cy="50" r="25" fill="red"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+        <desc>Drawing a rectangle</desc>
+            <rect x="10" y="10" width="100" height="100"
+                fill="blue" stroke="red" stroke-width="3" />
+    </svg>
+    <script src="canvas.js"></script>
+</body>
+
+</html>

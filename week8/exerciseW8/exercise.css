@@ -1,0 +1,70 @@
+/*Transform*/
+h1:hover span {
+    color: #f86565;
+    transform: skew(15deg, 4deg) skew(15deg, 4deg)rotate(10deg) translateX(200px) scale(1.5);
+}
+
+h1 span {
+    font-size: 30px;
+    color: #999999;
+    display: inline-block;
+}
+
+/*transition-property*/
+
+/*h1 span {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: 50ms;
+}*/
+h1 span {
+    /*transition: transform 0.2s ease-out 50ms;*/
+    transition: transform 0.2s ease-out 50ms, color 0.1s linear 50ms;
+}
+
+/*Animation*/
+
+@keyframes moveRight {
+    from {
+    transform: translateX(-50%);
+    }
+    to {
+    transform: translateX(50%);
+    }
+    }
+    @keyframes appearDisappear {
+    0%, 100% { opacity: 0;
+    }
+    
+    20%, 80% {opacity: 1;
+    }
+    }
+    @keyframes bgMove {
+    100% {
+    background-position: 120% 0;
+    }
+    }
+
+h1:after {
+    content: '';
+    width: 90px;
+    height: 92px;
+    background-image: url(../images/bike.jpg);
+    display: block;
+    margin: auto;
+    }
+@keyframes bike {
+    0% {
+    background-position: 1 5;
+    }
+    100% {
+    background-position: -360px 0;
+    }
+}
+
+/*Canvas, SVG, and Drag and Drop*/
+.myCanvas {
+    border: dotted 2px black;
+    margin: 0 20px;
+}
