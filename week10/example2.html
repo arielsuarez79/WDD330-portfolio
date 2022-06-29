@@ -63,6 +63,9 @@
         .error.active {
             padding: 0.3em;
         }
+        p {
+          width: 600px;
+        }
     </style>
 </head>
 
@@ -72,7 +75,37 @@
     <input type="email" id="mail" name="mail">
     <button>Submit</button>
   </form>
+  <h1>Using the Fetch API</h1>
+    <p>
+      fetch('http://example.com/movies.json')
+      .then(response => response.json())
+      .then(data => console.log(data));
+    </p>
+    <h2>Supplying request options</h2>
+    <p>
+      
+        
+          // Example POST method implementation:
+          async function postData(url = '', data = {}) {
+          // Default options are marked with *
+          const response = await fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          mode: 'cors', // no-cors, *cors, same-origin
+              'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: 'follow', // manual, *follow, error
+          referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data) // body data type must match "Content-Type" header
+          });
+          return response.json(); // parses JSON response into native JavaScript objects
+          }
 
+          postData('https://example.com/answer', { answer: 42 })
+          .then(data => {
+          console.log(data); // JSON data parsed by `data.json()` call
+          });
+    </p>
   <script>
   const email = document.getElementById("mail");
 
