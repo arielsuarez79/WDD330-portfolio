@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 .card{
     background: #6190E8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
@@ -6,11 +13,70 @@
 }
 
 .container{
+    margin: 50px 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+
     background: #16222A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
+}
+.card{
+    margin: 20px;
+    
+}
+#weather-string{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#weather-icon{
+    background-color: #ffff;
+    border-radius: 3px;
+    margin-top: 5px;
+}
 
+.list-group li{
+    margin-left: 0 auto;
+    list-style: none;
+    padding: 5px;
+    
+}
+.card-body{
+    width: 300px;
+    padding: 5px;
+    font-family:"Raleway";
+    
+}
+.form-card-body{
+    height: 120px;
+    padding: 5px;
+    font-family:"Roleway";
+}
+.city-form-control{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.country-form-control{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.btn{
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+.btn:hover{
+    background-color: #ffff;
 }
 
 #weather-location{

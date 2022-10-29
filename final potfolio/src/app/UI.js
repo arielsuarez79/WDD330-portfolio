@@ -17,7 +17,7 @@ export default class UI {
       this.icon.setAttribute('src', imagesrc)
       this.string.textContent = weather.main.temp + ' °C';
       this.humidity.textContent = 'Humidity: ' + weather.main.humidity + '°C';
-      this.wind.textContent = 'Weather ' + weather.wind.speed + ' m/s';
+      this.wind.textContent = 'Weather Wind: ' + weather.wind.speed + ' m/s';
     }
   
   }

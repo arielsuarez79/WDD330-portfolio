@@ -12,7 +12,7 @@
     <script type="module" defer src="./app/index.js" ></script>
   </head>
   <body>
-    <div class="container p-4">
+    <div class="container">
       <div class="row">
         <div class="col-md-4 mx-auto text-center">
           <!-- WEATHER CARD -->
@@ -30,16 +30,16 @@
           </div>
           <!-- WEATHER FORM -->
           <div class="card">
-            <div class="card-body">
+            <div class="form-card-body">
               <form id="w-form">
                 <div class="form-group">
-                  <input type="text" id="city" class="form-control" placeholder="City" autofocus>
+                  <input type="text" id="city" class="city-form-control" placeholder="City" autofocus>
                 </div>
                 <div class="form-group">
-                  <input type="text" id="countryCode" class="form-control" placeholder="Country Code">
+                  <input type="text" id="countryCode" class="country-form-control" placeholder="Country Code">
                 </div>
                 <div class="form-group">
-                  <button class="btn btn-dark btn-block" id="w-change-btn">
+                  <button class="btn" id="w-change-btn">
                     Find Weather
                   </button>
                 </div>
